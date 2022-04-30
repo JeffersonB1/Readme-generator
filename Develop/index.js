@@ -95,7 +95,7 @@ function init() {
     .prompt(questions)
     .then((data) =>{
         console.log(`github name = ${data.username}`)
-        return writeToFile('../README.md', generateMarkdown(data));
+        return writeToFile('./README.md', generateMarkdown(data));
     })
 }
 
